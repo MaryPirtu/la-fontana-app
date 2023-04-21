@@ -7,7 +7,7 @@ export default function MenuPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  
   return (
     <div className="App">
       <Navigation />
