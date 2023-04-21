@@ -15,6 +15,7 @@ import ContentProvider from "./context/CartContext";
 import SignUpPage from "./routes/SignUpPage";
 import PizzaPage from "./routes/PizzaPage";
 
+
 const router = createBrowserRouter([
   {
     path: "/",

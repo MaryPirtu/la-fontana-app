@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import CartEmpty from "./CartEmpty";
 import CartContent from "./CartContent";
 import { useContentContext } from "../../context/CartContext";
-import Api from "../../api/api";
 
 export default function Cart() {
   const { selectedProducts, setSelectedProducts } = useContentContext();
