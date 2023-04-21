@@ -15,7 +15,7 @@ export default function FooterNav() {
   ];
 
   return (
-    <div className="flex h-[228px] w-[60%] justify-around">
+    <div className="flex h-[228px] w-[60%] justify-between">
       {footerList.map((item) => (
         <div className="w-1/6">
           <div className="mb-[25px] pr-[30px] text-lg text-colorYellow">

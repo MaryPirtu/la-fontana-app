@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import Content from "../components/content/Content";
 import Footer from "../components/footer/Footer";
 import Navigation from "../components/navigation/Navigation";
+import Contacts from "../components/content/Contacts";
 
-export default function MenuPage() {
+export default function ContactsPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -11,7 +11,7 @@ export default function MenuPage() {
   return (
     <div className="App">
       <Navigation />
-      <Content />
+      <Contacts />
       <Footer />
     </div>
   );
