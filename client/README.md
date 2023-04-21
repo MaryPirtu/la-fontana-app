@@ -2,24 +2,24 @@
 
 ### 1. Mereu incepem lucru de pe branch-ul main
 
-### 2. git fetch
+<!-- ### 2. git fetch
 
-pentru a vedea ultimile schimbari de pe branch-ul 'origin/main'(origin == linkul catre repozitoriul de pe gitHub)
+pentru a vedea ultimile schimbari de pe branch-ul 'origin/main'(origin == linkul catre repozitoriul de pe gitHub) -->
 
-### 3. git pull
+### 3. git pull -r
 
 pentru a trage local ultimile schimbari in branch-ul main
 
 ### 4. git checkout -b branch-name
 
-cu acsta comanda creem branch nou, astai stuctura cum numim un branch, exemplu: nicoleta/init-repo
+cu acsta comanda creem branch nou, astai stuctura cum numim un branch, exemplu: init-repo
 
 ### pina a face git add ruleaza comenzile:
 
 npm run lint:fix
 npm run format
 
-### 5. git add .
+### 5. git add -A
 
 adaugam fisierele noi/modificate in commit
 
