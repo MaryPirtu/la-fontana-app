@@ -1,17 +1,17 @@
 import { useEffect } from "react";
-import Content from "../components/content/Content";
+
 import Footer from "../components/footer/Footer";
 import Navigation from "../components/navigation/Navigation";
+import Pizza from "../components/content/Pizza";
 
-export default function MenuPage() {
+export default function PizzaPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   return (
     <div className="App">
       <Navigation />
-      <Content />
+      <Pizza />
       <Footer />
     </div>
   );

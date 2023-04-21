@@ -1,7 +1,7 @@
 import { useEffect } from "react";
-import Content from "../components/content/Content";
 import Footer from "../components/footer/Footer";
 import Navigation from "../components/navigation/Navigation";
+import SignUp from "../components/content/SignUp";
 
 export default function MenuPage() {
   useEffect(() => {
@@ -11,7 +11,7 @@ export default function MenuPage() {
   return (
     <div className="App">
       <Navigation />
-      <Content />
+      <SignUp />
       <Footer />
     </div>
   );

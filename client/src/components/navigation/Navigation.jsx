@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
 import logo from "../../assets/pizza.png";
+import LoginIcon from "../icons/LoginIcon";
+import CartIcon from "../icons/CartIcon";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,7 @@ export default function Navigation() {
 
   return (
     <div className="sticky top-0 z-50 bg-stone bg-opacity-80">
-      <nav className="flex items-center justify-between px-4 py-3 md:px-8 md:py-4">
+      <nav className="flex items-center justify-around px-4 py-3 md:px-8 md:py-4">
         <div className="ml-9 w-16 lg:w-32">
           <Link to="/">
             <img alt="Logo" src={logo} />
@@ -65,11 +67,15 @@ export default function Navigation() {
           </li>
         </ul>
         <div className="mr-16 block space-x-4">
-          <LoginButton />
-          <CartButton />
+          <Button title="Login">
+            <LoginIcon />
+          </Button>
+          <Button title="Cart">
+            <CartIcon />
+          </Button>
         </div>
       </nav>
-      <ul className={`${isOpen ? "flex" : "hidden"} flex-col md:hidden`}>
+      <ul className={`${isOpen ? "flex" : "hidden"} flex-col pl-14 md:hidden`}>
         <li>
           <Button title="Menu" />
         </li>

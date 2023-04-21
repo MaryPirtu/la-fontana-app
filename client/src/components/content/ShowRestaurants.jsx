@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Restaurants from "./Restaurants";
 
 export default function ShowRestaurants() {
@@ -42,6 +43,9 @@ export default function ShowRestaurants() {
 
   return (
     <div className="grid grid-cols-1 gap-3">
+      <h1 className="mb-12 flex justify-center pt-16 text-4xl font-bold">
+        Our restaurants
+      </h1>
       {infoRestaurats.map((el) => (
         <Restaurants
           city={el.city}
@@ -50,6 +54,16 @@ export default function ShowRestaurants() {
           hours={el.hours}
         />
       ))}
+      <div className="flex justify-center pt-9">
+        <Link to="/menu">
+          <button
+            type="button"
+            className="rounded-lg border-2 border-solid border-colorYellow py-3 px-14 text-lg font-bold transition  hover:bg-colorYellow hover:text-stone hover:delay-200"
+          >
+            BACK TO MENU
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }
