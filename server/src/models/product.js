@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+// schema definiste structura documentului
 const productSchema = new mongoose.Schema({
   title: String,
   products: [

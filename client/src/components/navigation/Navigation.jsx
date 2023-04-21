@@ -4,7 +4,6 @@ import Button from "./Button";
 import logo from "../../assets/pizza.png";
 import LoginIcon from "../icons/LoginIcon";
 import CartIcon from "../icons/CartIcon";
-// import Cart from "../content/Cart";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

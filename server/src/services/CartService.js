@@ -1,5 +1,5 @@
 import Cart from "../models/cart.js";
-
+// fiecare serviciu stie a lucra cu o anumita colectie
 export default class CartService {
   async addToCart(item) {
     try {

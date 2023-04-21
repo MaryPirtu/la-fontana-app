@@ -6,7 +6,7 @@ export default class ProductService {
       const products = await Product.find({});
       return products;
     } catch (error) {
-      throw new Error(`Error adding Product: ${error.message}`);
+      throw new Error(`Error get Product: ${error.message}`);
     }
   }
 }

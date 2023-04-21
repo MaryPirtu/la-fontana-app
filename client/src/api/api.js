@@ -1,6 +1,14 @@
 const API_BASE_ADDRESS = "http://localhost:3002";
 
 export default class Api {
+  static async getAllProducts() {
+    const url = `${API_BASE_ADDRESS}/api/products`;
+    const data = await fetch(url, {
+      method: "GET",
+    });
+    return data.json();
+  }
+
   static async addToCart(item) {
     const url = `${API_BASE_ADDRESS}/api/cart`;
     const data = await fetch(url, {
@@ -9,14 +17,6 @@ export default class Api {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(item),
-    });
-    return data.json();
-  }
-
-  static async getAllProducts() {
-    const url = `${API_BASE_ADDRESS}/api/products`;
-    const data = await fetch(url, {
-      method: "GET",
     });
     return data.json();
   }
