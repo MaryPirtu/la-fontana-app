@@ -19,7 +19,9 @@ export default function CartItem({ produs, removeFromCart }) {
           <div className="text-transparent">.</div>
           <button
             type="button"
-            className="transition hover:text-yellow hover:delay-100"
+
+            className="transition hover:text-bgRed hover:delay-100"
+            
             onClick={() => removeFromCart(produs.productData)}
           >
             Remove

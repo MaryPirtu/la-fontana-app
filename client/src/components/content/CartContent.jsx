@@ -11,7 +11,7 @@ export default function CartContext({ cartItems, removeFromCart }) {
     );
   return (
     <div>
-      <h1 className="px-4 pb-12 text-3xl"> 1 Items in your cart</h1>
+      <h1 className="px-4 pb-12 text-3xl">Items in your cart</h1>
       <div className="grid grid-cols-2 ">
         <div className="pl-20 text-xl">
           <div>Product(s)</div>

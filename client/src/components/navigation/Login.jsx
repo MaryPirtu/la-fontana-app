@@ -1,18 +1,15 @@
-import { Link } from "react-router-dom";
-
 export default function Login() {
   return (
     <section>
       <div className="mx-auto flex flex-col items-center justify-center">
         <a
           href="#!"
-          className="mb-8 mt-8 flex items-center text-3xl font-semibold"
+          className="mb-16 mt-12 flex items-center text-4xl font-semibold"
         >
           Log in
         </a>
-
-        <div className="relative mb-12 flex w-[600px] items-center justify-center overflow-hidden rounded-lg shadow before:absolute before:h-[180%] before:w-[50%] before:animate-move-circle before:bg-gradient-to-r before:from-bgSlate before:to-colorYellow before:content-[''] after:absolute after:inset-1 after:rounded-lg after:bg-stone after:content-[''] ">
-          <div className="relative z-20 w-full rounded-lg p-16">
+        <div className="mb-24 w-[600px] rounded-lg border shadow">
+          <div className="p-16">
             <h1 className="mb-6 text-2xl font-bold italic tracking-wider">
               Returning Customers
             </h1>
@@ -65,6 +62,7 @@ export default function Login() {
                   </a>
                 </div>
               </div>
+              {/* Закрытие */}
               <button
                 type="submit"
                 className="w-full rounded-lg bg-colorYellow px-5 py-2.5 text-center text-sm font-medium"
@@ -73,11 +71,9 @@ export default function Login() {
               </button>
               <p className="text-sm font-light">
                 Do not have an account yet?{" "}
-                <Link to="/registration">
-                  <a href="#!" className="ml-2 font-medium hover:underline">
-                    Sign up
-                  </a>
-                </Link>
+                <a href="#!" className="ml-2 font-medium hover:underline">
+                  Sign up
+                </a>
               </p>
             </form>
           </div>

@@ -10,8 +10,19 @@ module.exports = {
       yellow: "rgb(251 191 36)",
       bgSlate: "rgb(241 245 249)",
       bgRed: "rgb(220 38 38)",
+      bgWhite: "white",
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        circle: {
+          from: { transform: "rotate(-45deg)" },
+          to: { transform: "rotate(315deg)" },
+        },
+      },
+      animation: {
+        "move-circle": "circle 5s ease-in-out forwards infinite ",
+      },
+    },
   },
   plugins: [],
 };

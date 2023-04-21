@@ -1,7 +1,7 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import ErrorPage from "./routes/Error-page";
 import MenuPage from "./routes/MenuPage";
@@ -12,6 +12,9 @@ import LoginPage from "./routes/LoginPage";
 import ContactsPage from "./routes/ContactsPage";
 import CartPage from "./routes/CartPage";
 import ContentProvider from "./context/CartContext";
+import SignUpPage from "./routes/SignUpPage";
+import PizzaPage from "./routes/PizzaPage";
+
 
 const router = createBrowserRouter([
   {
@@ -51,12 +54,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/registration",
-    element: <LoginPage />,
+    element: <SignUpPage />,
     errorElement: <ErrorPage />,
   },
   {
     path: "/cart",
     element: <CartPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/pizza",
+    element: <PizzaPage />,
     errorElement: <ErrorPage />,
   },
 ]);
