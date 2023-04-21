@@ -1,12 +1,16 @@
-export default function ItemCard({ src, alt, title, price }) {
+export default function ItemCard({ item, addToCart }) {
   return (
-    <div className="hover:border-solid hover:border-2 hover:border-yellow-500 bg-neutral-900 rounded-lg w-64 p-2">
-      <img className="rounded-lg place-content-center" src={src} alt={alt} />
-      <p className="text-white text-center"> {title} </p>
-      <div className="flex justify-between pr-2 pl-2 text-white border-solid border-2 border-yellow-500 rounded-lg p-0.5 hover:bg-amber-400 hover:text-black">
-        <p>${price}</p>
-        <button type="button">Order</button>
-      </div>
+    <div className="flex flex-col justify-between rounded-lg border-2 border-solid border-transparent p-2  transition hover:border-colorYellow hover:delay-100">
+      <img className="my-1 rounded-lg" src={item.src} alt={item.title} />
+      <p className="p-2"> {item.title} </p>
+      <button
+        type="button"
+        onClick={() => addToCart(item)}
+        className="flex justify-between rounded-lg border-2 border-solid border-colorYellow p-2 pr-2 pl-2 text-base transition hover:bg-colorYellow hover:text-stone hover:delay-100 md:text-lg"
+      >
+        <p>$ {item.price}</p>
+        <div>Order</div>
+      </button>
     </div>
   );
 }
