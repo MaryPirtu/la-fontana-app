@@ -14,6 +14,7 @@ Our project with ReactJS and ExpressJS built at Click School course. The front-e
 - @MaryPirtu
 - @radualexeev
 
+Project presentation :point_down:
 
 https://youtu.be/5_eg0MKaGDI
 
