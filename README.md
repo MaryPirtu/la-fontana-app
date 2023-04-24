@@ -9,3 +9,6 @@ Our project with ReactJS and ExpressJS built at clickschool course
 ## Team
 
 - @ghilannicoleta
+- @Alteo96
+- @MaryPirtu
+- @radualexeev
