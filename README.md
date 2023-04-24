@@ -13,3 +13,7 @@ Our project with ReactJS and ExpressJS built at Click School course. The front-e
 - @Alteo96
 - @MaryPirtu
 - @radualexeev
+
+
+https://user-images.githubusercontent.com/121303617/234071943-723d2ab4-00dd-4c24-a04e-e25e3fef7ba5.mp4
+
